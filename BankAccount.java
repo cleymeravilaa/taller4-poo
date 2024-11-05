@@ -31,8 +31,8 @@ public class BankAccount {
     }
 
     public void withdraw(double amount){
-        if (amount>0) {
-            System.out.println("No se puede retirar un saldo positivo");
+        if (amount>balance) {
+            System.out.println("No se puede retirar una cantidad mayor que el saldo actual");
         } else {
             balance -= amount;
         }
